@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TeeShop - Cool T-Shirts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Daily dose</h1>
+        <nav>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Find Your Style</h2>
+        <p>Trendy, comfy, and cool t-shirts for everyone.</p>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Our T-Shirts</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=400" alt="Classic Tee">
+                <h3>Classic Tee</h3>
+                <p>$15.00</p>
+                <button onclick="buyNow('Classic Tee', 15.00)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="ches 1.jpg" alt="Graphic Tee">
+                <h3>Graphic Tee</h3>
+                <p>$18.00</p>
+                <button onclick="buyNow('Graphic Tee', 18.00)">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="ches2.jpg" alt="Sport Tee">
+                <h3>Sport Tee</h3>
+                <p>$20.00</p>
+                <button onclick="buyNow('Sport Tee', 20.00)">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+            TeeShop is passionate about providing high-quality, comfortable, and stylish t-shirts. 
+            We believe everyone deserves to look and feel great in what they wear.
+        </p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Email: info@teeshop.com</p>
+        <p>Phone: +1 234 567 8900</p>
+    </section>
+
+    <footer>
+        &copy; 2025 TeeShop. All rights reserved.
+    </footer>
+
+    <script>
+        function buyNow(product, price) {
+            // Redirect to payment page with product and price in the URL
+            window.location.href = `payment.php?product=${encodeURIComponent(product)}&price=${price}`;
+        }
+    </script>
+</body>
+</html>
